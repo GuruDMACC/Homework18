@@ -12,6 +12,7 @@ public class Runner {
 		System.out.println("Enter Number");
 		int inputNumber = in.nextInt();
 		
+		 
 
 	}
 
