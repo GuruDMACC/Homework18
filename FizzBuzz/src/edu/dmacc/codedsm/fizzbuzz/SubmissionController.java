@@ -2,5 +2,5 @@ package edu.dmacc.codedsm.fizzbuzz;
 
 public interface SubmissionController {
 
-	void submit(String userName,Integer inputNumber);
+	void submit(String userName,int inputNumber);
 }

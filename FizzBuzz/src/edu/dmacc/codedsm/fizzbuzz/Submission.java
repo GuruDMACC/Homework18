@@ -2,14 +2,14 @@ package edu.dmacc.codedsm.fizzbuzz;
 
 public class Submission {
 
-	private Integer inputNumber;
+	private int inputNumber;
 	private String userName;
 	
 	
-	public Integer getInputNumber() {
+	public int getInputNumber() {
 		return inputNumber;
 	}
-	public void setInputNumber(Integer inputNumber) {
+	public void setInputNumber(int inputNumber) {
 		this.inputNumber = inputNumber;
 	}
 	public String getUserName() {
@@ -22,7 +22,7 @@ public class Submission {
 		return "Submission [inputNumber=" + inputNumber + ", userName="
 				+ userName + "]";
 	}
-	
+		
 	
 	
 }
