@@ -23,7 +23,7 @@ public class FizzBuzzServiceImpl implements FizzBuzzService {
 		result.setMessage(message);
 		
 		FizzBuzzMapRepository repo = new FizzBuzzMapRepository();
-		repo.setResult(result);
+		repo.save(result);
 		
 		return result;
 		
