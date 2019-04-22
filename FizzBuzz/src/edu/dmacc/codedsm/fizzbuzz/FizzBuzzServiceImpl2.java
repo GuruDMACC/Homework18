@@ -1,27 +1,27 @@
 package edu.dmacc.codedsm.fizzbuzz;
 
-public class FizzBuzzServiceImpl implements FizzBuzzService {
+public class FizzBuzzServiceImpl2 implements FizzBuzzService {
 
-private MapRepository repo; 
+	private MapRepository repo; 
 	
-	public FizzBuzzServiceImpl(MapRepository repo) {
+	public FizzBuzzServiceImpl2(MapRepository repo) {
 		 this.repo = repo;
 		 
 	}
-	
+
 	public Result performFizzBuzzLogic(Submission submission) {
 		 
 		String message=" ";
 		
-		if (submission.getInputNumber() % 3 == 0 && submission.getInputNumber() % 5 ==0) { 
+		if (submission.getInputNumber() % 4 == 0 && submission.getInputNumber() % 7 ==0) { 
 			message = "fizzbuzz";
 		}
 		else
-			if (submission.getInputNumber() % 3 == 0 ) { 
+			if (submission.getInputNumber() % 4 == 0 ) { 
 				message = "fizz";
 			}
 			else
-				if (submission.getInputNumber() % 5 == 0 ) { 
+				if (submission.getInputNumber() % 7 == 0 ) { 
 					message = "buzz";
 				}
 				else
@@ -32,7 +32,7 @@ private MapRepository repo;
 		Result result = new Result();
 		result.setMessage(message);
 		result.setSubmission(submission);
-		FizzBuzzMapRepository repo = new FizzBuzzMapRepository();
+		//FizzBuzzMapRepository repo = new FizzBuzzMapRepository();
 		repo.save(result);
 		
 		return result;

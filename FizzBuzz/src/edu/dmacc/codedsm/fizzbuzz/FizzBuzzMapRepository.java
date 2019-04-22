@@ -12,4 +12,9 @@ public class FizzBuzzMapRepository implements MapRepository {
 		 
 	}
 
+	@Override
+	public String toString() {
+		return "FizzBuzzMapRepository [storage=" + storage + "]";
+	}
+
 }

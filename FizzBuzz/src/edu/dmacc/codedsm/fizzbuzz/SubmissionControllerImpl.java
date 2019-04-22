@@ -9,13 +9,15 @@ public class SubmissionControllerImpl implements SubmissionController {
 		this.service = service;
 	}
 
-	public void submit(String userName, int inputNumber) {
+	public Inputview submit(String userName, int inputNumber) {
 
 		Submission submission = new Submission();
 		submission.setInputNumber(inputNumber);
 		submission.setUserName(userName);
 		
-		service.performFizzBuzzLogic(submission);
+		Result result= service.performFizzBuzzLogic(submission);
+		
+		return new ConsoleInputView(result);
 	}
 
 }
